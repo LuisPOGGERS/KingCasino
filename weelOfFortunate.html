@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>WheelOfFortunate</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="script.js" defer></script>
+
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Donegal+One&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+            <div id="home_links">
+              <a id="link1" class="home_link" href="index.html">Home</a>
+              <a id="link2" class="home_link" href="aufladen.html">Aufladen</a>
+              <a id="link3" class="home_link" href="about.html">Über uns</a>
+            </div>
+        
+            <div id="logo">
+              <a href="index.html">
+                <img src="image/KingCasino_logo2.png" alt="King Casino Logo">
+              </a>
+            </div>
+        
+            <div id="ueberschrift">
+              <h1>KING CASINO</h1>
+            </div>
+
+            <p id="credit">💲Credits: <span id="counter">0</span></p>
+          </header>
+
+        <div class="div_spin">
+          <img id="pointerspin" src="image/pointer.png" alt="fehler">
+          <img id="logospin" src="image/wheel.png" alt="fehler">
+          <button id="bt_spin" onclick="spin()">Spin 🍀<br>500💲</button>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Roulette</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Donegal+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div id="home_links">
+      <a id="link1" class="home_link" href="index.html">Home</a>
+      <a id="link2" class="home_link" href="aufladen.html">Aufladen</a>
+      <a id="link3" class="home_link" href="about.html">Über uns</a>
+    </div>
+
+    <div id="logo">
+      <a href="index.html">
+        <img src="image/KingCasino_logo2.png" alt="King Casino Logo">
+      </a>
+    </div>
+
+    <div id="ueberschrift">
+      <h1>KING CASINO</h1>
+    </div>
+
+    <p id="credit">💲Credits: <span id="counter">0</span></p>
+  </header>
+
+  <main>
+    <div id="rouletteA">
+      <img id="roulette_outer" class="roulette_img" src="image/roulette_outer.png" alt="FEHLER">
+      <img id="roulette_inner" class="roulette_img" src="image/roulette_inner.png" alt="FEHLER">
+      <img id="roulette_kugel" src="image/roulette_kugel.png" alt="FEHLER">
+    </div>
+
+    <div class="container">
+      <!--Row 1-->
+      <div class="red" onclick="f3()"><p>3</p><img id="3" class="red_nr to18_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f6()"><p>6</p><img id="6" class="black_nr to18_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f9()"><p>9</p><img id="9" class="red_nr to18_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f12()"><p>12</p><img id="12" class="black_nr to18_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f15()"><p>15</p><img id="15" class="black_nr to18_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f18()"><p>18</p><img id="18" class="red_nr to18_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f21()"><p>21</p><img id="21" class="red_nr to36_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f24()"><p>24</p><img id="24" class="black_nr to36_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f27()"><p>27</p><img id="27" class="red_nr to36_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f30()"><p>30</p><img id="30" class="black_nr to36_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f33()"><p>33</p><img id="33" class="black_nr to36_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f36()"><p>36</p><img id="36" class="red_nr to36_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <!-- Row 2 -->
+      <div class="black" onclick="f2()"><p>2</p><img id="2" class="black_nr to18_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f5()"><p>5</p><img id="5" class="red_nr to18_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f8()"><p>8</p><img id="8" class="black_nr to18_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f11()"><p>11</p><img id="11" class="black_nr to18_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f14()"><p>14</p><img id="14" class="red_nr to18_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f17()"><p>17</p><img id="17" class="black_nr to18_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f20()"><p>20</p><img id="20" class="black_nr to36_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f23()"><p>23</p><img id="23" class="red_nr to36_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f26()"><p>26</p><img id="26" class="black_nr to36_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f29()"><p>29</p><img id="29" class="black_nr to36_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f32()"><p>32</p><img id="32" class="red_nr to36_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f35()"><p>35</p><img id="35" class="black_nr to36_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <!-- Row 3 -->
+      <div class="red" onclick="f1()"><p>1</p><img id="1" class="red_nr to18_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f4()"><p>4</p><img id="4" class="black_nr to18_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f7()"><p>7</p><img id="7" class="red_nr to18_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f10()"><p>10</p><img id="10" class="red_nr to18_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f13()"><p>13</p><img id="13" class="black_nr to18_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f16()"><p>16</p><img id="16" class="red_nr to18_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f19()"><p>19</p><img id="19" class="red_nr to36_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f22()"><p>22</p><img id="22" class="black_nr to36_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f25()"><p>25</p><img id="25" class="red_nr to36_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f28()"><p>28</p><img id="28" class="red_nr to36_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="black" onclick="f31()"><p>31</p><img id="31" class="black_nr to36_nr odd_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <div class="red" onclick="f34()"><p>34</p><img id="34" class="red_nr to36_nr even_nr" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+      <!-- Row 4 -->
+      <div class="to18" onmouseover="hover_to18()" onmouseout="hover_end_to18()" onclick="f37()"><p class="r4">1-18</p> <img id="37" class="r4_img" src="image/roulette_chip2.png" ></div>
+      <div class="even" onmouseover="hover_even()" onmouseout="hover_end_even()" onclick="f38()"><p class="r4">EVEN</p> <img id="38" class="r4_img" src="image/roulette_chip2.png" ></div>
+      <div class="all_red" onmouseover="hover_red()" onmouseout="hover_end_red()" onclick="f39()"><p class="r4">RED</p> <img id="39" class="r4_img" src="image/roulette_chip2.png" ></div>
+
+      <div class="zero" onclick="f0()"><p class="r4" >0</p> <img id="0" class="hidden r4_img" src="image/roulette_chip2.png" onmouseenter="hover(this)" onmouseout="hover_end(this)"></div>
+
+      <div class="all_black" onmouseover="hover_black()" onmouseout="hover_end_black()" onclick="f41()"><p class="r4">BLACK</p> <img id="41" class="r4_img" src="image/roulette_chip2.png" ></div>
+      <div class="odd" onmouseover="hover_odd()" onmouseout="hover_end_odd()" onclick="f42()"><p class="r4">ODD</p> <img id="42" class="r4_img" src="image/roulette_chip2.png" ></div>
+      <div class="to36" onmouseover="hover_to36()" onmouseout="hover_end_to36()" onclick="f43()"><p class="r4">19-36</p> <img id="43" class="r4_img" src="image/roulette_chip2.png" ></div>
+    </div>
+
+    <p id="p_ein">EINSATZ:</p>
+
+    <div id="ein">
+      <div id="einsatz">
+        <button id="m" class="pm" onclick="minus()">-</button>
+        <p id="count">0</p>
+        <button id="p" class="pm" onclick="plus()">+</button>
+      </div>
+      <button id="setzen" onclick="setzen()">ROLL 🍀</button>
+    </div>
+  </main>
+  <footer>
+    
+  </footer>
+
+</body>
+</html>
