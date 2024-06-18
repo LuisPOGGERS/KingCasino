@@ -155,9 +155,9 @@ footer{
 }
 
 #pointerspin {
-    position: absolute;
-    top:  0px;
-    left: 42.6%;
+    position: relative;
+    top: -286px;
+    left: 320px;
     z-index: 1;
 }
 
