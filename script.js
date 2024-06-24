@@ -231,8 +231,8 @@ function minus(){
 //Check win Roulette
 var feld_check = 0;
 //var randomR = 0;
-var list_red = [1, 3, 5, 7, 9, 10, 14, 16, 18, 19, 21, 23, 25, 27, 28, 32, 34, 36];
-var list_black = [2, 4, 6, 8, 11, 12, 13, 15, 17, 20, 22, 24, 26, 29, 30, 31, 33, 35];
+var list_red = [1, 3, 5, 7, 9, 10, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36];
+var list_black = [2, 4, 6, 8, 11, 12, 13, 15, 17, 20, 22, 24, 26, 29, 28, 31, 33, 35];
 var rotR = 0.0; //Rotation von 0 - 360. 1 Feld = 2.7. 37 Felder
 
 function roll(){
